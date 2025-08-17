@@ -20,7 +20,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         video="https://files.catbox.moe/eaj9l2.mp4",
         caption=f"👋 Welcome <b>{user_first_name}</b>!\n\n"
                 "Thanks for starting <b>CP CLUB</b> 🎉\n\n"
-                "👉 Use /help — to see available commands\n"
+                "👉 Use /start — to see available commands\n"
                 "👉 Stay updated in our groups\n"
                 "👉 Contact admins anytime for support\n\n"
                 "Enjoy your stay! 🚀",

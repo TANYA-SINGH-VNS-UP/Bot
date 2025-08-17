@@ -4,6 +4,9 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 # 👉 Tumhara bot token
 TOKEN = "7303993344:AAGPjp2GZ6HaPPByXnMDjLLdpALeA1Vz6eo"
 
+# Apna video link
+WELCOME_VIDEO = "https://files.catbox.moe/eaj9l2.mp4"
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     name = user.first_name
@@ -24,7 +27,16 @@ Thanks for starting this bot — we're glad to have you here.
 
 <i>Enjoy your stay!</i>  
 """
+
+    # Pehle video bhejo (caption ke saath)
+    await update.message.reply_video(
+        video=WELCOME_VIDEO,
+        caption=f"👋 Welcome, {name}!",
+    )
+
+    # Fir detailed welcome message bhejo
     await update.message.reply_html(welcome_text, disable_web_page_preview=True)
+
 
 if __name__ == "__main__":
     app = Application.builder().token(TOKEN).build()

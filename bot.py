@@ -2,7 +2,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes
 
 # अपना Bot Token डालो
-BOT_TOKEN = "7303993344:AAGPjp2GZ6HaPPByXnMDjLLdpALeA1Vz6eo"
+BOT_TOKEN = "7303993344:AAG0PRQWo8UeIraHkDYoNQfVL6IM9pKTZoo"
 
 # Admin / Channel ID जहाँ start log भेजना है
 ADMIN_ID = -1002223516578  # <-- Updated
